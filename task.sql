@@ -5,7 +5,7 @@ VALUES (1, '2023-01-01');
 
 SET @OrderID = LAST_INSERT_ID();
 
-INSERT INTO OrderItems (OrderID, ProductID, Quantity)
+INSERT INTO OrderItems (OrderID, ProductID, COUNT)
 VALUES (@OrderID, 1,1);
 
 UPDATE Products
